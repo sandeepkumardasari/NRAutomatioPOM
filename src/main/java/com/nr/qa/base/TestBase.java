@@ -1,4 +1,4 @@
-package com.crm.qa.base;
+package com.nr.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,8 +13,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.crm.qa.util.TestUtil;
-import com.crm.qa.util.WebEventListener;
+import com.nr.qa.util.TestUtil;
+import com.nr.qa.util.WebEventListener;
 
 public class TestBase {
 	
@@ -26,7 +26,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/crm"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/nr"
 					+ "/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
@@ -45,16 +45,15 @@ public class TestBase {
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
+			System.setProperty("webdriver.gecko.driver", "C:\\Nextrow\\FFB\\geckodriver.exe");	
 			//driver = new FirefoxDriver(); 
 		}
-		
-		
-		e_driver = new EventFiringWebDriver(driver);
-		// Now create object of EventListerHandler to register it with EventFiringWebDriver
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
+				
+//		e_driver = new EventFiringWebDriver(driver);
+//		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+//		eventListener = new WebEventListener();
+//		e_driver.register(eventListener);
+//		driver = e_driver;
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -65,12 +64,4 @@ public class TestBase {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-
 }

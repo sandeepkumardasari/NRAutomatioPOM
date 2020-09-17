@@ -1,4 +1,4 @@
-package com.crm.qa.util;
+package com.nr.qa.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.crm.qa.base.TestBase;
+import com.nr.qa.base.TestBase;
 
 public class TestUtil extends TestBase {
 
@@ -27,6 +27,11 @@ public class TestUtil extends TestBase {
 	static Workbook book;
 	static Sheet sheet;
 	static JavascriptExecutor js;
+	
+	public void back()
+	{
+		driver.navigate().back();
+	}
 
 	public void switchToFrame() {
 		driver.switchTo().frame("mainpanel");

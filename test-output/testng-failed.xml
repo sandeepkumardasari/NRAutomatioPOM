@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.FreeCrmTest">
+      <class name="com.nr.qa.testcases.HomePageLinksTest">
         <methods>
+          <include name="linksTest"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="freeCrmTitleTest"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.FreeCrmTest -->
+      </class> <!-- com.nr.qa.testcases.HomePageLinksTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
