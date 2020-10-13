@@ -29,7 +29,7 @@ public class ContactsPageTest extends TestBase{
 	public void setUp() throws InterruptedException {
 		
 		initialization();
-
+		System.out.println("initialisation complete");
 	}
 	
 	@Test
