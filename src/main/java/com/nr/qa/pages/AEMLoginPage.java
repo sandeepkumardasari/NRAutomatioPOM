@@ -38,8 +38,6 @@ public class AEMLoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
-	
 	public void Login()
 	{
 		
@@ -61,7 +59,4 @@ public class AEMLoginPage extends TestBase {
 		loginError.isDisplayed();
 	}
 	
-	
-	
-
 }

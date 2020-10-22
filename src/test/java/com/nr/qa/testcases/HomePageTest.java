@@ -20,14 +20,12 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 
-	
 	@BeforeMethod
 	public void setUp() {
 		initialization();
 		loginPage=new AEMLoginPage();
 		loginPage.Login();
 	}
-	
 	
 	@Test(priority=1)
 	public void verifyHomePageTitleTest(){
@@ -36,15 +34,9 @@ public class HomePageTest extends TestBase {
 		Assert.assertEquals(homePageTitle, "AEM Start","Home page title not matched");
 	}
 	
-	
-	
-	
-	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
 	}
 	
-	
-
 }

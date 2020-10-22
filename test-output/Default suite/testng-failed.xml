@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.nr.qa.testcases.HomePageLinksTest">
+      <class name="com.nr.qa.testcases.VerifyImageWithAddToCartLink">
         <methods>
-          <include name="linksTest"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="imageWithAddToCartAuthor"/>
         </methods>
-      </class> <!-- com.nr.qa.testcases.HomePageLinksTest -->
+      </class> <!-- com.nr.qa.testcases.VerifyImageWithAddToCartLink -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
