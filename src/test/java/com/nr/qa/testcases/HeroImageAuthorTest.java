@@ -9,13 +9,13 @@ import com.nr.qa.pages.AEMLoginPage;
 import com.nr.qa.pages.SitesPage;
 import com.nr.qa.pages.TestPage;
 
-public class HeroImageComponentAuthorTest extends TestBase{
+public class HeroImageAuthorTest extends TestBase{
 	AEMLoginPage loginPage;
 	TestPage testPage;
 	SitesPage sitesPage;
 	
 		
-	public HeroImageComponentAuthorTest(){
+	public HeroImageAuthorTest(){
 		super();
 	}
 	

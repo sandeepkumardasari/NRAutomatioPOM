@@ -1,3 +1,5 @@
+  
+
 package com.nr.qa.testcases;
 
 import org.testng.annotations.AfterMethod;
@@ -7,10 +9,10 @@ import org.testng.annotations.Test;
 import com.nr.qa.base.TestBase;
 import com.nr.qa.pages.TestPagePublisher;
 
-public class HeroImageComponentpublisherTest extends TestBase{
+public class HeroImagePublisherTest extends TestBase{
 	TestPagePublisher testpagepublish;
 	
-	public HeroImageComponentpublisherTest(){
+	public HeroImagePublisherTest(){
 		super();
 	}
 	

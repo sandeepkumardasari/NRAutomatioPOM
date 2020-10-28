@@ -10,13 +10,13 @@ import com.nr.qa.pages.SitesPage;
 import com.nr.qa.pages.TestPage;
 
 
-public class VerifyImageWithAddToCartLink extends TestBase{
+public class ImageWithAddToCartLinkAuthor extends TestBase{
 	
 	AEMLoginPage loginPage;
 	TestPage testPage;
 	SitesPage sitesPage;
 	
-	public VerifyImageWithAddToCartLink(){
+	public ImageWithAddToCartLinkAuthor(){
 		super();
 	}
 	

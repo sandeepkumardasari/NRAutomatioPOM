@@ -1,6 +1,5 @@
 package com.nr.qa.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,13 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.nr.qa.base.TestBase;
 
 public class TestPagePublisher extends TestBase{
-	
-WebDriver driver;
-	
-	public TestPagePublisher(WebDriver ldriver) {
-		this.driver=ldriver;
-	}
-	
+		
 	@FindBy(xpath="//*[text()='Hero Image Test']")
 	WebElement heroImagetest;
 	
@@ -29,14 +22,14 @@ WebDriver driver;
 			PageFactory.initElements(driver, this);
 		}
 	
-	public void heroImagePublisherTest(){
-		
-		if (heroImagetest.isDisplayed()) {
-			System.out.println("Publisher test pass");
+		public void heroImagePublisherTest(){
+			
+			if (heroImagetest.isDisplayed()) {
+				System.out.println("Publisher test pass");
+			}
+			else
+				System.out.println("Publisher test fail");
 		}
-		else
-			System.out.println("Publisher test fail");
-	}
 
 	public void imageWithAddtocartlinkPublisherTest(){
 		
@@ -47,6 +40,5 @@ WebDriver driver;
 		else
 			System.out.println("Image With Add to cart link Publisher test fail");
 	}
-
 
 }
