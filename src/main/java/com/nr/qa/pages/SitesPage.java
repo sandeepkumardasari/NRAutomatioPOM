@@ -28,6 +28,9 @@ public class SitesPage extends TestBase{
 	@FindBy(xpath="//button[@type='button' and @icon='edit']")
 	WebElement editButton;
 	
+	@FindBy(xpath="//*[@id=\"granite-shell-content\"]/div[2]/div/div[2]/coral-columnview/coral-columnview-column[4]/coral-columnview-column-content/coral-columnview-item[8]/coral-columnview-item-thumbnail/img")
+	WebElement test2Page;
+	
 	// Initializing the Page Objects:
 	public SitesPage() {
 		PageFactory.initElements(driver, this);
@@ -39,6 +42,16 @@ public class SitesPage extends TestBase{
 		languageMaster.click();
 		english.click();
 		testPage.click();
+		editButton.click();
+	}
+	
+	public void openTest2Page()
+	{
+		sites.click();
+		NRfinance.click();
+		languageMaster.click();
+		english.click();
+		test2Page.click();
 		editButton.click();
 	}
 }

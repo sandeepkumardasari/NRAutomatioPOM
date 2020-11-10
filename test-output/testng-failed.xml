@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.nr.qa.testcases.ImageWithAddToCartLinkAuthor">
+      <class name="com.nr.qa.testcases.ContentTextAuthorTest">
         <methods>
           <include name="setUp"/>
+          <include name="authorHeroImageTest"/>
           <include name="tearDown"/>
-          <include name="imageWithAddToCartAuthor"/>
         </methods>
-      </class> <!-- com.nr.qa.testcases.ImageWithAddToCartLinkAuthor -->
+      </class> <!-- com.nr.qa.testcases.ContentTextAuthorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

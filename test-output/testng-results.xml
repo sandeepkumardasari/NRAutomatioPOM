@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21515" started-at="2020-10-28T09:39:17Z" finished-at="2020-10-28T09:39:38Z">
+  <suite name="Default suite" duration-ms="80108" started-at="2020-11-10T10:48:17Z" finished-at="2020-11-10T10:49:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21515" started-at="2020-10-28T09:39:17Z" finished-at="2020-10-28T09:39:38Z">
-      <class name="com.nr.qa.testcases.ImageWithAddToCartLinkPublisher">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nr.qa.testcases.ImageWithAddToCartLinkPublisher@1d057a39]" name="setUp" is-config="true" duration-ms="16668" started-at="2020-10-28T15:09:17Z" finished-at="2020-10-28T15:09:33Z">
+    <test name="Default test" duration-ms="80108" started-at="2020-11-10T10:48:17Z" finished-at="2020-11-10T10:49:37Z">
+      <class name="com.nr.qa.testcases.ContentTextAuthorTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nr.qa.testcases.ContentTextAuthorTest@1d057a39]" name="setUp" is-config="true" duration-ms="14957" started-at="2020-11-10T16:18:17Z" finished-at="2020-11-10T16:18:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHeroImagePublisher()[pri:1, instance:com.nr.qa.testcases.ImageWithAddToCartLinkPublisher@1d057a39]" name="verifyHeroImagePublisher" duration-ms="4133" started-at="2020-10-28T15:09:33Z" finished-at="2020-10-28T15:09:37Z">
+        <test-method status="PASS" signature="authorHeroImageTest()[pri:1, instance:com.nr.qa.testcases.ContentTextAuthorTest@1d057a39]" name="authorHeroImageTest" duration-ms="64287" started-at="2020-11-10T16:18:32Z" finished-at="2020-11-10T16:19:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeroImagePublisher -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nr.qa.testcases.ImageWithAddToCartLinkPublisher@1d057a39]" name="tearDown" is-config="true" duration-ms="683" started-at="2020-10-28T15:09:37Z" finished-at="2020-10-28T15:09:38Z">
+        </test-method> <!-- authorHeroImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nr.qa.testcases.ContentTextAuthorTest@1d057a39]" name="tearDown" is-config="true" duration-ms="839" started-at="2020-11-10T16:19:36Z" finished-at="2020-11-10T16:19:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.nr.qa.testcases.ImageWithAddToCartLinkPublisher -->
+      </class> <!-- com.nr.qa.testcases.ContentTextAuthorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

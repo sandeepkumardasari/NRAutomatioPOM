@@ -7,15 +7,17 @@ import org.testng.annotations.Test;
 import com.nr.qa.base.TestBase;
 import com.nr.qa.pages.AEMLoginPage;
 import com.nr.qa.pages.SitesPage;
+import com.nr.qa.pages.Test2Page;
 import com.nr.qa.pages.TestPage;
 
-public class HeroImageAuthorTest extends TestBase{
-	AEMLoginPage loginPage;
-	TestPage testPage;
-	SitesPage sitesPage;
+public class ContentTextAuthorTest extends TestBase{
 	
-		
-	public HeroImageAuthorTest(){
+	AEMLoginPage loginPage;
+	SitesPage sitesPage;
+	TestPage testPage;
+	Test2Page test2Page;
+	
+	public ContentTextAuthorTest() {
 		super();
 	}
 	
@@ -24,20 +26,22 @@ public class HeroImageAuthorTest extends TestBase{
 		initialization();
 		driver.get(prop.getProperty("loginurl"));
 	}	
-
+	
 	@Test (priority=1)
 	public void authorHeroImageTest() throws Exception {
 		loginPage = new AEMLoginPage();	
 		sitesPage=new SitesPage();
 		testPage=new TestPage();
+		test2Page=new Test2Page();
 		
 		loginPage.Login();
-		sitesPage.openTestPage();
+		sitesPage.openTest2Page();
+		Thread.sleep(2000);
 		testPage.windowHandles();
 		Thread.sleep(8000);
 		testPage.dragAndDropComponent();
-		testPage.dragAndDropHeroImageComponent();
-		testPage.authorHeroImageComponent();
+		test2Page.dragAndDropContentTextComponent();
+		test2Page.authorContentTextComponent();
 		testPage.publishTestPage();
 		}
 

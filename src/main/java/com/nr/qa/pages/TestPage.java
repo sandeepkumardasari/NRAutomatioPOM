@@ -18,7 +18,7 @@ public class TestPage extends TestBase{
 	@CacheLookup
 	WebElement openSidepanel;
 	
-	@FindBy(xpath="//*[@id=\"OverlayWrapper\"]/div[2]/div[3]")
+	@FindBy(xpath="//*[@id=\"OverlayWrapper\"]/div[2]/div[2]")
 	WebElement parsys;
 	
 	@FindBy(xpath="//*[@title='Insert component']")
@@ -127,10 +127,13 @@ public class TestPage extends TestBase{
 		{
 		driver.switchTo().window(child_window);	
 	}}}
-	public void dragAndDropHeroImageComponent() throws Exception {	
+	public void dragAndDropComponent() throws Exception {	
 		openSidepanel.click();
 		parsys.click();
 		insertComponent.click();
+		}
+	
+	public void dragAndDropHeroImageComponent() throws Exception {	
 		enterKeyWord.sendKeys("hero");
 		heroImage.click();
 		}
@@ -152,7 +155,7 @@ public class TestPage extends TestBase{
 		checkbox.click();
 		done.click();
 		}
-	
+	 
 	public void publishTestPage() throws Exception
 	{
 		Thread.sleep(2000);
